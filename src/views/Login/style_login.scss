@@ -1,0 +1,92 @@
+[data-route="login"] {
+  display: flex;
+  width: 100%;
+  height: calc(100vh - 3px);
+  overflow: hidden;
+  background-color: var(--bg4);
+  color: var(--col4);
+}
+.login-left {
+  width: 600px;
+  background-color: var(--bg1);
+  color: var(--col1);
+  background-image: url("../images/2592543.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.loginForm {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  padding: 20px;
+  margin: 0 auto;
+  width: 300px;
+
+  > i {
+    font-size: 50px;
+    margin-bottom: 20px;
+    color: var(--col3);
+  }
+  > div {
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    position: relative;
+    border: 1px solid var(--col3);
+    color: var(--bg1);
+
+    input {
+      background: transparent;
+      border: 0;
+      padding-left: 26px;
+      outline: none;
+      height: 40px;
+      width: 100%;
+      color: var(--bg1);
+
+      &::placeholder {
+        color: var(--bg1);
+      }
+    }
+    > i {
+      position: absolute;
+      top: 50%;
+      left: 10px;
+      transform: translateY(-38%);
+      font-size: 12px;
+    }
+  }
+  button {
+    border: 0;
+    height: 40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-size: 13px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    outline: none;
+    background-color: var(--col3);
+    color: var(--bg3);
+    &:hover {
+      background-color: var(--bg5);
+      color: var(--col5);
+    }
+  }
+  p {
+    text-align: right;
+    width: 100%;
+    font-weight: 300;
+    span {
+      cursor: pointer;
+      font-weight: 500;
+      font-size: 14px;
+    }
+  }
+}
